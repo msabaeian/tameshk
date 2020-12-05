@@ -1,0 +1,433 @@
+@charset "UTF-8";
+@import "../fonts/IranSans/css/fontiran.css";
+*{padding: 0; margin: 0; box-sizing: border-box; transition: all .7s;}
+a{text-decoration: none; color: #fff;}
+body{
+    direction: rtl;
+    background: #F1F1F1;
+    font-family: 'IranSans' !important;
+    overflow-x: hidden;
+}
+aside{
+    background: rgb(39,58,73);
+    width: 250px !important;
+    height: 100% !important;
+    position: fixed;
+    top: 0;
+    right: 0;
+    color: #fff;
+    box-shadow: 0 1px 5px #000;
+    float: right;
+    overflow-y: scroll !important;
+}
+aside > img{margin: 10px 10px 0 0;border-radius: 40%; float: right }
+aside:hover > img{border-radius: 10%;margin-right: 15px;}
+.aside-ul{
+    border-right:3px solid transparent;
+    padding: 0 10px 3px 10px;}
+.aside-ul:hover{
+    border-right:3px solid rgb(28,168,141);
+    background: rgb(49, 67, 84);
+}
+.aside-ul:hover > a > li{color: rgb(30, 222, 193);}
+aside ul li{
+    list-style: none;
+    padding: 6px 0 6px 0;
+    font-size: 9pt;
+    font-weight: bold;
+    margin-top: 8px;
+    -webkit-border-radius:10px;
+    -moz-border-radius:10px;
+    cursor: pointer;
+    color: rgb(160,173,190);
+}
+.sub-ul:hover{
+    background: rgb(39, 58, 75);
+}
+aside ul ul a:hover li{color: #fff}
+aside ul ul{
+    margin-right: 20px;
+}
+
+.list{
+    padding: 5px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+.list:hover{
+    background: rgb(159, 159, 159) none repeat scroll 0% 0%;
+}
+.content{
+    margin-right: 230px;
+    width: 800px;
+}
+.min{width: auto; }
+.content-a{
+    background: #607D8B;
+    border-radius: 7px;
+    padding: 10px;
+    color: #fff;
+    font-size: 10pt;
+}
+.content input{padding: 10px;}
+
+.ok{
+    background: #dff0d8;
+    border-radius: 4px;
+    padding: 5px;
+    color: #3c763d;
+    font-size: 10pt;
+    border: 1px solid #d6e9c6;
+    cursor: pointer;
+}
+.ok a{color: rgb(96, 96, 96);}
+.infobtn{
+    color: #31708f;
+    background-color: #d9edf7;
+    border:1px solid #bce8f1;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 10pt;
+    cursor: pointer;
+}
+.error{
+    background: #f2dede;
+    border-radius: 4px;
+    padding: 5px;
+    color: #a94442;
+    font-size: 10pt;
+    border: 1px solid #ebccd1;
+    cursor: pointer;
+}
+.warning{
+    color: #8a6d3b;
+    background-color: #fcf8e3;
+    border:1px solid #faebcc;
+    border-radius: 4px;
+    padding: 5px;
+    font-size: 10pt;
+    cursor: pointer;
+}
+.btn{
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all ease-in-out .175s !important;
+    display: inline-block;
+}
+.logout{
+    font-size: 10pt;
+    background-color: rgb(253,82,65);
+    color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+    cursor: pointer;
+    border-radius: 2px;
+    transition: all ease-in-out .175s !important;
+    padding: 3px 5px 4px 6px;
+    margin-right: -52px;
+    float: right;
+
+}
+.box{
+    width: 250px;
+    padding: 10px;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    border-radius: 3px;
+    border-top: 3px solid rgb(204, 204, 206);
+}
+.box:hover{
+    border-top:3px solid rgb(30,222,193);
+}
+.color-red{color: #f00}
+.color-green{color: darkgreen}
+.pointer{cursor: pointer}
+.logout:focus,.logout:hover{
+    outline: none;
+    color:white;
+    background-color: rgb(255, 83, 66);
+    box-shadow:0 1px 2px rgba(0,0,0,0.15),0 1px 4px rgba(0,0,0,0.1)
+}
+
+input,select,textarea{
+    padding: 10px;
+    color: #8a6d3b;
+    background: #fcf8e3;
+    border: 1px solid #faebcc;
+    border-radius: 4px;
+}
+input[type='submit']{
+    background: #dff0d8;
+    border-radius: 4px;
+    padding: 5px;
+    color: #3c763d;
+    margin: 10px 0;
+    font-size: 10pt;
+    border: 1px solid #d6e9c6;
+    cursor: pointer;
+}
+
+.parentCheckBox{position: relative; width: 220px;height: 285px;}
+.selectResponsiblies{ color: rgb(138, 109, 59);
+    background: rgb(252, 248, 227) none repeat scroll 0% 0%;
+    padding: 10px;
+    border: 1px solid rgb(250, 235, 204);
+    border-radius: 5px;
+    width: 200px;
+    line-height: 16px;
+    font-size: 8pt;
+    position: absolute;
+    top: 20px;
+    overflow-y: scroll;
+    height: 260px;
+    text-align: right;
+}
+tr td select{
+    display: none;
+    opacity: 0;
+}
+tr:hover select{
+    display: block;
+    opacity: 1;
+}
+.tbl tr td a{color: #2A3542 !important;}
+tr:hover img{border-radius: 0; border:2.5px solid #b4b4b4  }
+tr img{border-radius: 2px; border:2.5px solid transparent  }
+tr td a:hover{color: #000 !important; text-shadow: 0 0 1px #424242}
+/* Tables */
+
+.tbl {
+    direction: rtl !important;
+    border-right: 1px solid #CACCCF !important;
+    border-left: 1px solid #CACCCF !important;
+    border-bottom: 1px solid #CACCCF !important;
+    margin: 4px -7px 21px 6px !important;
+    width: 101%;
+    background: #fff;
+}
+.tbl .top {
+    /* background:none repeat scroll 0 0 #FAFAFA !important; */
+    color: #636363 !important;
+    text-shadow: 1px 1px 0 #FFF !important;
+    font-size: 13px !important;
+}
+.tbl td {
+    text-align: center !important;
+    border-width: 1px 0 0 !important;
+    border-style: solid none none !important;
+    border-color: #EBEBEB -moz-use-text-color -moz-use-text-color !important;
+    -moz-border-top-colors: none !important;
+    -moz-border-right-colors: none !important;
+    -moz-border-bottom-colors: none !important;
+    -moz-border-left-colors: none !important;
+    border-image: none !important;
+    padding: 19px 4px !important;
+    font-size: 9pt;
+}
+
+.send{cursor: pointer}
+.number-tbl{width: 80px;}
+.tbl tr td i{font-size:20px;}
+.tbl .download-buy{width:100px;}
+.page{
+    background: #2196F3;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+main{
+    width: 810px;
+    height: 200px;
+    margin-right: 250px;
+    padding:20px 10px 0 0;
+}
+.active-page{
+    color: #ffff00;
+}
+header.top{
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    padding: 10px;
+    border-top: 3px solid rgb(228,232,235);
+    border-bottom: 1px solid rgb(228,232,235);
+
+}
+main:hover header.top{
+    border-top: 3px solid rgb(4, 131, 227);
+    border-bottom: 1px solid transparent;
+}
+header.top input{
+    float: left;
+    margin-top: -28px;
+    padding: 6px;
+    color: #3f2903;
+    background: #ffee94;
+    border: 1px solid #ffc754;
+}
+.avatar{border-radius: 50%; width: 50px; height: 50px; border: 1px solid transparent}
+.avatar:hover{border-radius:0;}
+.avatar-140{width: 140px; height: 140px;border: 1px solid #ccc;}
+.btn-green{
+    background: rgb(26,179,149);
+    border-radius: 5px;
+    color: #fff;
+    padding: 7px;
+    font-size: 11pt;
+    width: 150px;
+    float: right;
+}
+.btn-green:hover{
+    background: rgb(27, 213, 182);
+}
+.btn-blue{
+    background-color: #006DCC !important;
+    border-radius: 5px !important;
+    color: #fff !important;
+    padding: 7px !important;
+    font-size: 11pt !important;
+    width: 150px !important;
+    float: right;
+}
+.btn-yellow{
+    background-color: #FDCF41 !important;
+    border-radius: 5px !important;
+    color: #333 !important;
+    padding: 7px !important;
+    font-size: 11pt !important;
+    float: right;
+}
+.btn-red{
+    background-color: rgb(238,47,47) !important;
+    border-radius: 5px !important;
+    color: #fff !important;
+    padding: 7px !important;
+    font-size: 11pt !important;
+    float: right;
+}
+.btn:hover{
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+}
+.float-left{float: left;}
+.float-right{float: right;}
+.margin-right-25{margin-right: 25px}
+.form{
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    padding: 20px;
+    box-shadow: 0px 2px 2px rgb(203, 203, 203);
+}
+.no-border-right{border-right: none !important;}
+.no-border-left{border-left: none !important;}
+.no-border-top{border-top: none !important;}
+.no-border-bottom{border-bottom: none !important;}
+.item{
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255) none repeat scroll 0% 0%;
+    padding: 5px;
+    color: #949494;
+    text-align: center;
+    margin-top: 15px;
+}
+.item a{color: #6f6f6f }
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.hide{
+    opacity: 0;
+}
+.item:hover .hide{
+    opacity:1;
+}
+/* Plugins */
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+.pace-inactive {
+    display: none;
+}
+
+.pace .pace-progress {
+    background: #16b690;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 2px;
+}
+.slimScrollDiv{
+    height: 0 !important;
+}
+textarea{
+    font-family: "IranSans";
+    font-size: 9pt;
+}
+.directionLtr{direction: ltr}
+.textarea200{
+    max-width: 200px;
+}
+::-webkit-scrollbar { background:#ddd; width:15px;height:15px; } ::-webkit-scrollbar-thumb { background:#999; border-radius:0px; box-shadow:inset 0 0 10px #333; } ::-webkit-scrollbar-corner { background:#fff;}       ::-webkit-scrollbar-track{ background:#eee; border-radius:0px; box-shadow:inset 0 0 10px #aaa;}::-webkit-scrollbar-thumb:hover{ background:#888;}::-webkit-scrollbar-thumb:active{ background:#777;}
+
+
+
+/*Radio Button */
+input[type=radio],input[type=checkbox]{
+    position: absolute;
+    visibility: hidden;
+}
+.check{
+    display: inline-block;
+    border: 5px solid #AAAAAA;
+    border-radius: 100%;
+    height: 15px;
+    width: 15px;
+    z-index: 5;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+
+input[type=radio]:hover + .check,input[type=checkbox]:hover + .check {
+    border: 5px solid #8496cc;
+    cursor: pointer;
+}
+
+.check::before {
+    display: block;
+    content: '';
+    border-radius: 100%;
+    height: 2px;
+    width: 2px;
+    margin: 1.5px 1.524px 0 0;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+
+input[type=radio]:checked ~ .check,input[type=checkbox]:checked ~ .check {
+    border: 5px solid #1081B6;
+}
+
+input[type=radio]:checked ~ .check::before,input[type=checkbox]:checked ~ .check::before{
+    background: #0DFF92;
+}
+
+input[type=radio]:checked ~ label , input[type=checkbox]:checked ~ label{
+    color: #0DFF92;
+}
+label{cursor: pointer}
+
+input[type=checkbox] ~ .check{border-radius: 0 !important;}
+
+.a{
+    color: #1F1F1F;
+    padding:5px;
+}

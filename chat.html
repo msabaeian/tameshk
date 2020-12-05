@@ -1,0 +1,58 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <!-- <script type="text/javascript">!function(){function t(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,localStorage.getItem("rayToken")?t.src="https://app.raychat.io/scripts/js/"+o+"?rid="+localStorage.getItem("rayToken")+"&href="+window.location.href:t.src="https://app.raychat.io/scripts/js/"+o;var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(t,e)}var e=document,a=window,o="fb7fb74c-4b8e-4563-ade5-13f3cc4c9b19";"complete"==e.readyState?t():a.attachEvent?a.attachEvent("onload",t):a.addEventListener("load",t,!1)}();</script> -->
+
+<script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="9b16a266-c80b-4d6e-88aa-32167f7c78d2";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.im/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+<script defer>
+$crisp.push(["set", "user:email", "mhd@gmail.com"]);
+    $crisp.do("chat:open");
+    $crisp.set("user:email", "mhd@gmail.com");
+    
+     setInterval(function(){ 
+         $crisp.do("chat:show");
+         document.querySelector(".example"); 
+         
+     }, 3000);
+     
+     window.CRISP_READY_TRIGGER = function() {
+  if ($crisp.is("chat:opened") === true) {
+    
+    var d = document.querySelector(".crisp-27"); 
+    console.log(d.className);
+    d.className += " width";
+  }
+};
+</script>
+<style>
+body{background:#EDEDEE;}
+.crisp-61{display: none !important;}
+.crisp-27, .width{
+    width:100% !important;
+}
+    @media only screen and (max-width: 850px) {
+    #raychatFrame {
+      width: 100% !important;
+      height: 100%;
+    }
+    .raychat_main_container_header_agents_close_btn{
+        display:none !important;
+    }
+    
+    .raychat_main_container_header_agents_close_btn.active{
+        display:none !important;
+    }
+    
+    .raychat_main_container_header{
+        display:none !important;
+    }
+  }
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+<body>
+    <center>
+        <img src="images/ezgif.com-crop.gif">
+    </center>
+</body>
+</html>
